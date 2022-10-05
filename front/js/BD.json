@@ -1,0 +1,10 @@
+data = `[
+  {
+    "quote": "<div class='pi_text zoom_text'>Повторение — мать заикания.<br/><br/><a data-link='/feed?section=search&amp;q=%23%D0%A2%D0%BE%D0%BC%D0%B8%D0%BB%D0%BE%D0%B2'>#Томилов</a> А. Б. Возрастная анотомия и психология <a data-link='/feed?section=search&amp;q=%23%D1%84%D0%BF%D0%BF%D0%BA_%D0%BA%D1%83%D0%B1%D0%B3%D1%83'>#фппк_кубгу</a></div>",
+    "author": "Томилов А. Б."
+  },
+  {
+    "quote": "<div class='pi_text'>Почему студенту нельзя импровизировать на устном экзамене? Потому что преподаватель начнет импровизировать с итоговой оценкой. <br/> <br/><a data-link='/feed?section=search&amp;q=%23%D0%A7%D0%B0%D0%BB%D1%8B%D0%B9'>#Чалый</a> В. В. Русский язык и культура речи <br/><a data-link='/feed?section=search&amp;q=%23%D0%B3%D0%B5%D0%BE%D1%84%D0%B0%D0%BA_%D0%BA%D1%83%D0%B1%D0%B3%D1%83'>#геофак_кубгу</a></div>",
+    "author": "Чалый В. В."
+  }
+]`;

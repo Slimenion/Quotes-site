@@ -19,27 +19,19 @@
         <div class="container position-relative" style="z-index: 10">
             <div
                 class="w-50 rounded-5 bg-light m-auto d-flex flex-column align-items-center shadow-lg"
+                id="quote"
             >
-                <p class="fs-3 mt-3 mb-0 p-3">
-                    Главное — найти к каждому студенту подход. Найти, а потом
-                    заминировать.
-                </p>
-                <p class="fs-3 p-3 mb-0">
-                    #Половодов Ю. А. Физический практикум
-                </p>
-                <p class="fs-3 p-3 mb-0">#физтех_кубгу</p>
+                <div class='pi_text zoom_text'>Повторение — мать заикания.<br/><br/><a data-link='/feed?section=search&amp;q=%23%D0%A2%D0%BE%D0%BC%D0%B8%D0%BB%D0%BE%D0%B2'>#Томилов</a> А. Б. Возрастная анотомия и психология <a data-link='/feed?section=search&amp;q=%23%D1%84%D0%BF%D0%BF%D0%BA_%D0%BA%D1%83%D0%B1%D0%B3%D1%83'>#фппк_кубгу</a></div>
             </div>
             <div
                 class="w-50 rounded-5 bg-light m-auto mt-3 shadow-lg px-4 text-center p-3"
             >
                 <div class="row gx-5">
                     <div class="col">
-                        <select name="" id="" class="w-75 h-100 rounded-5">
-                            <option>#Половодов</option>
-                        </select>
+                        <select name="" id="author" class="w-75 h-100 rounded-5"></select>
                     </div>
                     <div class="col">
-                        <button class="btn btn-success w-75 h-100 rounded-5">
+                        <button class="btn btn-success w-75 h-100 rounded-5" id="submitButon">
                             Найти
                         </button>
                     </div>
@@ -52,5 +44,7 @@
             class="position-fixed bottom-0 img-fluid"
             style="z-index: 1; right: -400px"
         />
+        <script src="js/BD.json"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
