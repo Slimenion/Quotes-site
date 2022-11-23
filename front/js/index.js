@@ -22,17 +22,9 @@ function authorCheck(authors, author) {
     return c;
 }
 
-db = db.sort(function (a, b) {
-   if (a.author < b.author) {
-       return -1
-   }  else {
-       return 1
-   }
-});
-
 async function getTextAnswer(url) {
     return await fetch(url).then(result => {
-        return result.text()
+        return result.json()
     }).then(responseResult => {
         return responseResult
     })
@@ -40,8 +32,8 @@ async function getTextAnswer(url) {
 
 
 getTextAnswer("https://functions.yandexcloud.net/d4eahqh17rjle04km5ot").then(elem => {
-    let db = JSON.parse(elem.toString());
-    console.log(db)
+    console.log(elem)
+
 })
 
 
