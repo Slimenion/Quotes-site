@@ -22,20 +22,13 @@ function authorCheck(authors, author) {
     return c;
 }
 
-async function getTextAnswer(url) {
-    return await fetch(url).then(result => {
-        return result.json()
-    }).then(responseResult => {
-        return responseResult
-    })
-}
-
-
-getTextAnswer("https://functions.yandexcloud.net/d4eahqh17rjle04km5ot").then(elem => {
-    console.log(elem)
-
-})
-
+db = db.sort(function (a, b) {
+   if (a.author < b.author) {
+       return -1
+   }  else {
+       return 1
+   }
+});
 
 for (let note of db) {
     if (!authorCheck(authors, note.author) && note.author.length < 30) {
